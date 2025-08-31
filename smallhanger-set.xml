@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2015 onox
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+
+<!--Restored by an unknown editor. If you did this. Please come out and tell us!-->
+
+<PropertyList>
+
+    <sim>
+        <author>Phoenix</author>
+        <description>[Cool Things to Bomb!] Small Aircraft Hanger (More like a roof xd)</description>
+        <long-description>A Small Aircraft Hanger!</long-description>
+        <status>alpha</status>
+        <aircraft-version>0.1</aircraft-version>
+
+        <flight-model>null</flight-model>
+
+        <aero>KPN-D</aero>
+        <aircraft-operator>KPN</aircraft-operator>
+
+        <model>
+            <path>Aircraft/coolthingstobomb/Models/SmallHanger/Small_Hanger.xml</path>
+
+            <!-- Uncloak weather balloons visiting Earth -->
+            <always-show-in-MP type="bool">true</always-show-in-MP>
+        </model>
+
+        <sound>
+            <path>Sounds/sound.xml</path>
+        </sound>
+
+        <presets>
+            <onground>true</onground>
+        </presets>
+
+        <startup>
+            <splash-texture>Aircraft/coolthingstobomb/gui/smallhanger.png</splash-texture>
+        </startup>
+
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>gui/smallhanger.png</path>
+            </preview>
+        </previews>
+
+        <current-view>
+            <deck-park type="bool">true</deck-park>
+
+            <z-offset-dec-step type="double">0.0</z-offset-dec-step>
+            <z-offset-inc-step type="double">0.0</z-offset-inc-step>
+            <can-change-z-offset type="bool">false</can-change-z-offset>
+
+            <z-offset-min-m type="float">100.0</z-offset-min-m>
+            <z-offset-max-m type="float">2000.0</z-offset-max-m>
+        </current-view>
+       
+        
+        <chase-distance-m type="double" archive="y">-350.0</chase-distance-m>
+
+        <hud>
+            <path n="1">Aircraft/coolthingstobomb/Hud/lgrad.xml</path>
+            <visibility n="1">true</visibility>
+            <font>
+                <size type="float">11.0</size>
+            </font>
+        </hud>
+
+        <tower>
+            <auto-position type="bool">true</auto-position>
+        </tower>
+
+        <multiplay>
+            <visibility-range-nm type="int">2000</visibility-range-nm>
+            <generic>
+                <int n="0" type="int">0</int>
+                <int n="2" type="int">0</int>
+                <int n="3" type="int">0</int><!-- KY58 int -->
+                <string n="6" type="string"></string><!-- string 6 used by radar lock RWR warning -->
+                <string n="7" type="string"></string><!-- datalink -->
+                <string n="8" type="string"></string><!-- comms -->
+                <float n="1" type="float">0</float><!-- doors -->
+            </generic>
+        </multiplay>
+
+        <menubar>
+            <default>
+                <menu n="100">
+                    <label>Small Hanger</label>
+                    <enabled type="bool">true</enabled>
+                        <item>
+                        <label>Open Doors</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
+                                setprop("sim/multiplay/generic/float[1]",1);
+
+                            </script>
+                        </binding>
+                    </item>
+                        <item>
+                        <label>Close Doors</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
+                                setprop("sim/multiplay/generic/float[1]",0);
+
+                            </script>
+                        </binding>
+                    </item>
+                    <item>
+                        <label>Relocate to cursor last click</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
+                                if (getprop("controls/test1") != 0) {
+                                    setprop("position/latitude-deg",getprop("sim/input/click/latitude-deg"));
+                                    setprop("position/longitude-deg",getprop("sim/input/click/longitude-deg"));
+                                    setprop("position/altitude-ft",getprop("sim/input/click/elevation-ft"));
+                                    var h = geo.elevation(getprop("sim/input/click/latitude-deg"),getprop("sim/input/click/longitude-deg"));
+                                    if (h!=nil)
+                                        setprop("position/altitude-ft",h*M2FT+0.030);
+                                    setprop("controls/test1", getprop("controls/test1") - 1);
+                                    screen.log.write("You can only use this command "~getprop("controls/test1")~" more time(s).")
+                                } else {
+                                    screen.log.write("You have used all the relocations available!")                                    
+                                }
+
+                            </script>
+                        </binding>
+                    </item>
+                    <item>
+                        <label>Event Log</label>
+                        <binding>
+                            <command>dialog-show</command>
+                            <dialog-name>flightlog</dialog-name>
+                        </binding>
+                    </item>
+                </menu>
+            </default>
+        </menubar>
+
+        <aircraft-data>
+            <!-- Properties that get saved to persist locally between FG sessions -->
+            <path>enemies/e1</path>
+            <path>enemies/e2</path>
+            <path>enemies/e3</path>
+            <path>enemies/e4</path>
+            <path>enemies/e5</path>
+            <path>enemies/e6</path>
+            <path>enemies/e7</path>
+            <path>enemies/e8</path>
+            <path>enemies/e9</path>
+            <path>enemies/e10</path>
+            <path>enemies/e11</path>
+            <path>enemies/e12</path>
+        </aircraft-data>
+    </sim>
+	
+	<controls>
+    <radar>
+    <dish>
+        <pitch type="double">45</pitch>
+        <hdg type="double">0</hdg>
+    </dish>
+    </radar>
+        <sounds>
+                    <launch type="int">0</launch>
+        </sounds>
+	</controls>
+	
+	<payload>
+        <d-config>
+            <full_damage_dist_m type="double">-10</full_damage_dist_m>
+            <use_hitpoints_instead_of_failure_modes_bool type="bool">true</use_hitpoints_instead_of_failure_modes_bool>
+            <hp_max type="double">3000</hp_max>
+            <hitable_by_air_munitions type="bool">false</hitable_by_air_munitions>
+            <hitable_by_cannon type="bool">true</hitable_by_cannon>
+            <is_fleet type="bool">false</is_fleet>
+            <rwr_to_screen type="bool">true</rwr_to_screen>
+            <rwr_audio_extended type="bool">false</rwr_audio_extended>
+            <tacview_supported type="bool">false</tacview_supported>
+            <m28_auto type="bool">false</m28_auto>
+            <mlw_max type="double">2000</mlw_max>
+            <auto_flare_caller type="bool">false</auto_flare_caller>
+        </d-config>	
+        <armament>
+				<models type="string">Aircraft/coolthingstobomb/Models/eme</models>
+                <modelsUseCase type="bool">true</modelsUseCase>
+                <modelsUpperCase type="bool">true</modelsUpperCase>
+                <MP-lat type="string">rotors/main/blade[0]/flap-deg</MP-lat>
+                <MP-lon type="string">rotors/main/blade[1]/flap-deg</MP-lon>
+                <MP-alt type="string">rotors/main/blade[2]/flap-deg</MP-alt>
+                <MP-alt-ft type="string">rotors/main/blade[2]/position-deg</MP-alt-ft>
+				<msg type="bool">true</msg>
+				<damage type="bool">true</damage>
+                <enable-craters type="bool">true</enable-craters>
+                <MLW-bearing type="double">0</MLW-bearing>
+                <MLW-count type="int">0</MLW-count>
+                <MLW-launcher type="string"></MLW-launcher>
+                <MAW-bearing type="double">0</MAW-bearing>
+                <MAW-active type="bool">false</MAW-active>
+                <spike type="bool">false</spike>
+            </armament>
+
+
+    </payload>
+
+    <rotors>
+        <main>
+            <blade n="0">
+                <flap-deg type="double">0</flap-deg>
+            </blade>
+            <blade n="1">
+                <flap-deg type="double">0</flap-deg>
+            </blade>
+            <blade n="2">
+                <flap-deg type="double">0</flap-deg>
+                <position-deg type="double">0</position-deg>
+            </blade>
+            <blade n="3">
+                <flap-deg type="double">0</flap-deg>
+            </blade>
+        </main>
+    </rotors>
+
+    <sam>
+        <impact0 type="double">-1</impact0>
+        <impact1 type="double">-1</impact1>
+        <impact2 type="double">-1</impact2>
+        <impact3 type="double">-1</impact3>
+        <hit0 type="double">-1</hit0>
+        <hit1 type="double">-1</hit1>
+        <hit2 type="double">-1</hit2>
+        <hit3 type="double">-1</hit3>
+        <missiles type="double">4</missiles>
+        <timeleft type="double">10</timeleft>
+        <damage type="double">100</damage>
+    </sam>
+
+        <enemies>
+        <e1 userarchive="y" type="string">target1</e1>
+        <e2 userarchive="y" type="string">target2</e2>
+        <e3 userarchive="y" type="string">target3</e3>
+        <e4 userarchive="y" type="string">target4</e4>
+        <e5 userarchive="y" type="string">target5</e5>
+        <e6 userarchive="y" type="string">target6</e6>
+        <e7 userarchive="y" type="string">target7</e7>
+        <e8 userarchive="y" type="string">target8</e8>
+        <e9 userarchive="y" type="string">target9</e9>
+        <e10 userarchive="y" type="string">targetA</e10>
+        <e11 userarchive="y" type="string">targetB</e11>
+        <e12 userarchive="y" type="string">targetC</e12>
+    </enemies>
+
+	    <instrumentation>
+        <datalink>
+            <data type="int">0</data>
+            <power type="bool">true</power>
+            <channel type="int">2924</channel>
+            <power_prop type="string">/instrumentation/datalink/power</power_prop>
+            <channel_prop type="string">instrumentation/datalink/channel</channel_prop>
+            <receive_period type="double">1</receive_period>
+        </datalink>
+	<enav><selected type="int">3</selected></enav>
+<radar>
+
+  <range type="int" archive="y">40</range>
+  <range-factor type="double" archive="n">0.001888</range-factor>
+  <minimized type="bool" archive="y">false</minimized>
+  <selected type="int">2</selected>
+  <lock type="int">0</lock>
+  <lock2 type="int">0</lock2>
+  <threat-spotted type="int">0</threat-spotted> <!--for lockhelper.nas-->
+      <!-- inicio en pruebas -->
+  <enabled type="bool">0</enabled>
+  <grid type="bool">1</grid>
+  <az-field type="double">360</az-field>
+
+  <range type="double">150</range>
+  <range-selected type="double">50</range-selected>
+  <radar2-range type="double">150</radar2-range>
+  <display-rdr type="bool">true</display-rdr>
+  <radar-standby type="int">0</radar-standby>
+<mode>
+  <rws type="bool">true</rws>
+  <tws-auto type="bool">false</tws-auto>
+    <main type="int">0</main> <!--0 TWS 1 RWS 2 Custom-->
+</mode>
+
+</radar> 
+
+
+  <radar2>
+  <direction type="double">0</direction>
+	<lockmarker type="double">0</lockmarker>
+   <sweep-width-m type="double">0.0844</sweep-width-m>
+   <range-width-m type="double">0.0846</range-width-m>
+   <radius-ppi-display-m type="double">0.0846</radius-ppi-display-m>
+   <hud-eye-dist-m type="double">0.6705</hud-eye-dist-m>
+   <hud-radius-m type="double">0.071</hud-radius-m>
+   <sweep-speed type="double">1.5</sweep-speed>
+   <!--RWS Mode to start-->
+   <sweep-display-width type="double">0.0846</sweep-display-width>
+   <hud>
+    <target type="bool">1</target>
+   </hud>
+   <targets>
+    <aircraft n="0">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+    <aircraft n="1">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+    <aircraft n="2">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+    <aircraft n="3">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+    <aircraft n="4">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+    <aircraft n="5">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+    <aircraft n="6">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+    <aircraft n="7">
+      <display type="bool">1</display>
+      <x-shift type="double"/>
+      <y-shift type="double"/>
+      <rotation type="double"/>
+      <closure-last-time type="double"/>
+    </aircraft>
+   </targets>
+  </radar2>
+    </instrumentation>
+    <nasal>
+        <!--emesary><file>Aircraft/GNDRADAR/Nasal/emesary.nas</file></emesary>
+        <emesary_mp_bridge><file>Aircraft/GNDRADAR/Nasal/emesary_mp_bridge.nas</file></emesary_mp_bridge-->
+        <notifications>
+            <file>Aircraft/coolthingstobomb/Nasal/ArmamentNotification.nas</file>
+            <file>Aircraft/coolthingstobomb/Nasal/GeoBridgedTransmitter.nas</file>
+        </notifications>
+        <carrier>
+            <file>Aircraft/coolthingstobomb/Nasal/fdm.nas</file>
+        </carrier>
+		<damage>
+			<file>Aircraft/coolthingstobomb/Nasal/damage.nas</file>
+		</damage>
+        <vector>
+            <file>Aircraft/coolthingstobomb/Nasal/vector.nas</file><!-- needed by the guided-missiles -->
+        </vector>
+        <misc>
+      <file>Aircraft/coolthingstobomb/Nasal/misc.nas</file> 
+        </misc>
+        <dish>
+      <file>Aircraft/coolthingstobomb/Nasal/init.nas</file> 
+        </dish>
+
+               <!-- <RC>
+            <file>Aircraft/GNDRADAR/Nasal/remotecontrol.nas</file> Uapilot's Remote Sam Target Updater System
+        </RC>-->
+    </nasal>
+
+</PropertyList>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<nasal>
+  <load>
+    <!--
+      ##############################################################################
+      # The on-load Nasal is not executed when this file is loaded as the user
+      # aircraft. The code is only executed if the file is loaded for a remote
+      # aircraft in Multi-Player mode (MP)
+      ##############################################################################
+    -->
+    <![CDATA[
+	var asdf = 1;
+  # Paste part 1 here!
+    ]]>
+
+    </load>
+  
+ <unload><![CDATA[
+	var asdf = 0;
+  # Paste the second bit here!
+  ]]></unload>
+</nasal>
+
+
+
+  <path>Aircraft/coolthingstobomb/Models/LargeHanger/LargeHanger.ac</path>
+	<!--<animation>
+		<type>rotate</type>
+		<object-name>probe</object-name>
+        <object-name>dish</object-name>
+        <object-name>middish</object-name>
+		<property>controls/radar/dish/pitch</property>
+		<axis>   
+        <object-name>pitch-axis</object-name>
+		</axis>
+	</animation>
+		<animation>
+		<type>rotate</type>
+
+        <object-name>rdr</object-name>
+		<property>controls/radar/dish/hdg</property>
+		<axis>   
+        <object-name>spin-axis</object-name>
+		</axis>
+	</animation>-->
+
+
+ <animation>
+  <type>translate</type>
+  <object-name>door1fl</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>-10</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>door1fr</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>10</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+</PropertyList>
+
