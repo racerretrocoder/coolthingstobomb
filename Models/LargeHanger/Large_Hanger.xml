@@ -73,5 +73,15 @@
  </animation>
 
 
+
+<animation>
+  <type>material</type>
+  <object-name>logo1</object-name>
+  <property-base>sim/model/livery</property-base>
+  <texture-prop>texture-logo1</texture-prop>
+  <texture>Liveries/LH1.png</texture>
+</animation>
+
+
 </PropertyList>
 

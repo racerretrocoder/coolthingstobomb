@@ -102,6 +102,13 @@
                 <menu n="100">
                     <label>Large Hanger</label>
                     <enabled type="bool">true</enabled>
+					<item>
+					<label>Select Livery</label>
+					<binding>
+						<command>nasal</command>
+						 <script>aircraft.livery.dialog.toggle()</script>
+					</binding>
+				</item>
                         <item>
                         <label>Open Doors</label>
                         <binding>
@@ -408,7 +415,9 @@
         <dish>
       <file>Aircraft/coolthingstobomb/Nasal/init.nas</file> 
         </dish>
-
+	 <livery>
+<file>Aircraft/coolthingstobomb/Nasal/LHliveries.nas</file>
+</livery>
                <!-- <RC>
             <file>Aircraft/GNDRADAR/Nasal/remotecontrol.nas</file> Uapilot's Remote Sam Target Updater System
         </RC>-->
