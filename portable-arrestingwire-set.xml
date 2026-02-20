@@ -21,8 +21,8 @@
 
     <sim>
         <author>Phoenix</author>
-        <description>[Cool Things to Bomb!] Large Aircraft Hanger</description>
-        <long-description>A large Aircraft Hanger!</long-description>
+        <description>[Cool Things to Bomb!] Portable Runway Arresting Wire</description>
+        <long-description>Turn anyrunway into an aircraft carrier flight deck!</long-description>
         <status>alpha</status>
         <aircraft-version>0.1</aircraft-version>
 
@@ -32,14 +32,10 @@
         <aircraft-operator>KPN</aircraft-operator>
 
         <model>
-            <path>Aircraft/coolthingstobomb/Models/LargeHanger/Large_Hanger.xml</path>
+            <path>Aircraft/coolthingstobomb/Models/ArrestingWire/Arresting_Wire.xml</path>
 
             <!-- Uncloak weather balloons visiting Earth -->
             <always-show-in-MP type="bool">true</always-show-in-MP>
-	<livery>
-		<name type="string">Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.xml</name>
-		<file type="string">LH1</file>
-	</livery>
         </model>
 
         <sound>
@@ -51,14 +47,14 @@
         </presets>
 
         <startup>
-            <splash-texture>Aircraft/coolthingstobomb/gui/largegroundradar.png</splash-texture>
+            <splash-texture>Aircraft/coolthingstobomb/gui/arrestingwire.png</splash-texture>
         </startup>
 
         <previews>
             <preview>
                 <type>exterior</type>
                 <splash type="bool">true</splash>
-                <path>gui/largegroundradar.png</path>
+                <path>gui/arrestingwire.png</path>
             </preview>
         </previews>
 
@@ -97,42 +93,15 @@
                 <string n="6" type="string"></string><!-- string 6 used by radar lock RWR warning -->
                 <string n="7" type="string"></string><!-- datalink -->
                 <string n="8" type="string"></string><!-- comms -->
-                <float n="1" type="float">0</float><!-- doors -->
+                <float n="1" type="float">0</float><!-- arresting wire movement -->
             </generic>
         </multiplay>
 
         <menubar>
             <default>
                 <menu n="100">
-                    <label>Large Hanger</label>
+                    <label>Arresting Wires</label>
                     <enabled type="bool">true</enabled>
-					<item>
-					<label>Select Livery</label>
-					<binding>
-						<command>nasal</command>
-						 <script>aircraft.livery.dialog.toggle()</script>
-					</binding>
-				</item>
-                        <item>
-                        <label>Open Doors</label>
-                        <binding>
-                            <command>nasal</command>
-                            <script>
-                                setprop("sim/multiplay/generic/float[1]",1);
-
-                            </script>
-                        </binding>
-                    </item>
-                        <item>
-                        <label>Close Doors</label>
-                        <binding>
-                            <command>nasal</command>
-                            <script>
-                                setprop("sim/multiplay/generic/float[1]",0);
-
-                            </script>
-                        </binding>
-                    </item>
                     <item>
                         <label>Relocate to cursor last click</label>
                         <binding>
@@ -159,13 +128,6 @@
                         <binding>
                             <command>dialog-show</command>
                             <dialog-name>flightlog</dialog-name>
-                        </binding>
-                    </item>
-                    <item>
-                        <label>Change datalink</label>
-                        <binding>
-                            <command>dialog-show</command>
-                            <dialog-name>prio</dialog-name>
                         </binding>
                     </item>
                 </menu>
@@ -203,9 +165,9 @@
 	
 	<payload>
         <d-config>
-            <full_damage_dist_m type="double">-10</full_damage_dist_m>
+            <full_damage_dist_m type="double">0</full_damage_dist_m>
             <use_hitpoints_instead_of_failure_modes_bool type="bool">true</use_hitpoints_instead_of_failure_modes_bool>
-            <hp_max type="double">3000</hp_max>
+            <hp_max type="double">100</hp_max>
             <hitable_by_air_munitions type="bool">false</hitable_by_air_munitions>
             <hitable_by_cannon type="bool">true</hitable_by_cannon>
             <is_fleet type="bool">false</is_fleet>
@@ -213,7 +175,7 @@
             <rwr_audio_extended type="bool">false</rwr_audio_extended>
             <tacview_supported type="bool">false</tacview_supported>
             <m28_auto type="bool">false</m28_auto>
-            <mlw_max type="double">2000</mlw_max>
+            <mlw_max type="double">10</mlw_max>
             <auto_flare_caller type="bool">false</auto_flare_caller>
         </d-config>	
         <armament>
@@ -419,9 +381,7 @@
         <dish>
       <file>Aircraft/coolthingstobomb/Nasal/init.nas</file> 
         </dish>
-	 <livery>
-<file>Aircraft/coolthingstobomb/Nasal/LHliveries.nas</file>
-</livery>
+
                <!-- <RC>
             <file>Aircraft/GNDRADAR/Nasal/remotecontrol.nas</file> Uapilot's Remote Sam Target Updater System
         </RC>-->

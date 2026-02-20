@@ -21,8 +21,8 @@
 
     <sim>
         <author>Phoenix</author>
-        <description>[Cool Things to Bomb!] Large Aircraft Hanger</description>
-        <long-description>A large Aircraft Hanger!</long-description>
+        <description>[Cool Things to Bomb!] Large Ground Radar</description>
+        <long-description>big radar!! scan the skies!! dont die!! alert your people!!</long-description>
         <status>alpha</status>
         <aircraft-version>0.1</aircraft-version>
 
@@ -32,14 +32,10 @@
         <aircraft-operator>KPN</aircraft-operator>
 
         <model>
-            <path>Aircraft/coolthingstobomb/Models/LargeHanger/Large_Hanger.xml</path>
+            <path>Aircraft/coolthingstobomb/Models/GroundRadar/Ground_Radar.xml</path>
 
             <!-- Uncloak weather balloons visiting Earth -->
             <always-show-in-MP type="bool">true</always-show-in-MP>
-	<livery>
-		<name type="string">Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.xml</name>
-		<file type="string">LH1</file>
-	</livery>
         </model>
 
         <sound>
@@ -97,42 +93,14 @@
                 <string n="6" type="string"></string><!-- string 6 used by radar lock RWR warning -->
                 <string n="7" type="string"></string><!-- datalink -->
                 <string n="8" type="string"></string><!-- comms -->
-                <float n="1" type="float">0</float><!-- doors -->
             </generic>
         </multiplay>
 
         <menubar>
             <default>
                 <menu n="100">
-                    <label>Large Hanger</label>
+                    <label>Large Ground Radar</label>
                     <enabled type="bool">true</enabled>
-					<item>
-					<label>Select Livery</label>
-					<binding>
-						<command>nasal</command>
-						 <script>aircraft.livery.dialog.toggle()</script>
-					</binding>
-				</item>
-                        <item>
-                        <label>Open Doors</label>
-                        <binding>
-                            <command>nasal</command>
-                            <script>
-                                setprop("sim/multiplay/generic/float[1]",1);
-
-                            </script>
-                        </binding>
-                    </item>
-                        <item>
-                        <label>Close Doors</label>
-                        <binding>
-                            <command>nasal</command>
-                            <script>
-                                setprop("sim/multiplay/generic/float[1]",0);
-
-                            </script>
-                        </binding>
-                    </item>
                     <item>
                         <label>Relocate to cursor last click</label>
                         <binding>
@@ -413,15 +381,33 @@
         <vector>
             <file>Aircraft/coolthingstobomb/Nasal/vector.nas</file><!-- needed by the guided-missiles -->
         </vector>
+        <armament>
+            <file>Aircraft/coolthingstobomb/Nasal/guided-missiles.nas</file> <!--For RWR-->
+        </armament>
+        <datalink>
+            <file>Aircraft/coolthingstobomb/Nasal/datalink.nas</file>
+        </datalink>
+
+    <radar>
+      <file>Aircraft/coolthingstobomb/Nasal/radar2.nas</file> 
+    </radar>
+
+        <lockhelper>
+            <file>Aircraft/coolthingstobomb/Nasal/lockhelper.nas</file><!-- my 3rd custom nasal script! :D -->
+        </lockhelper>
+        <mig28>
+      <file>Aircraft/coolthingstobomb/Nasal/dmgrec.nas</file> 
+        </mig28>
+		<KY58>
+			<file>Aircraft/coolthingstobomb/Nasal/secure.nas</file>
+		</KY58>
         <misc>
       <file>Aircraft/coolthingstobomb/Nasal/misc.nas</file> 
         </misc>
         <dish>
       <file>Aircraft/coolthingstobomb/Nasal/init.nas</file> 
         </dish>
-	 <livery>
-<file>Aircraft/coolthingstobomb/Nasal/LHliveries.nas</file>
-</livery>
+
                <!-- <RC>
             <file>Aircraft/GNDRADAR/Nasal/remotecontrol.nas</file> Uapilot's Remote Sam Target Updater System
         </RC>-->
