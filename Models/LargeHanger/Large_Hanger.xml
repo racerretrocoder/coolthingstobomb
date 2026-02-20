@@ -166,7 +166,7 @@ var smallsearch = func(cs=nil) {
             <a>0</a>
         </specular>
         <dim-factor>
-            <property>sim/multiplay/generic/float[1]</property>
+            <property>controls/gear/gear-down</property>
         </dim-factor>
         <attenuation>
             <c>1.0</c>
@@ -211,7 +211,7 @@ var smallsearch = func(cs=nil) {
             <a>0</a>
         </specular>
         <dim-factor>
-            <property>sim/multiplay/generic/float[1]</property>
+            <property>controls/gear/gear-down</property>
         </dim-factor>
         <attenuation>
             <c>1.0</c>

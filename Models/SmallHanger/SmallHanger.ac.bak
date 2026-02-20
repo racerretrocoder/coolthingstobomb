@@ -1,11 +1,11 @@
 AC3Db
 MATERIAL "" rgb 0.457895 0.457895 0.457895  amb 0.457895 0.457895 0.457895  emis 0 0 0  spec 0.5 0.5 0.5  shi 400  trans 0
-MATERIAL "" rgb 0.810526 0.836842 0.405263  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 400  trans 0
+MATERIAL "" rgb 0 0.621053 1  amb 0 0 0.542105  emis 0 0 0  spec 0 0 0  shi 400  trans 0
 OBJECT world
 kids 1
 OBJECT poly
 name "wavefront obj"
-loc 0 0 -0.480811
+loc 0 0 0.572394
 crease 45.000000
 numvert 7030
 1.08311 4.7942 3.37258
