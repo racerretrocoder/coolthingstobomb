@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>megafloat.ac</path>
+
+
+<!-- doors -->
+
+ <animation>
+  <type>translate</type>
+  <object-name>door1fl</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>-20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>door1fr</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
+  <factor>20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>door2fl</object-name>
+  <property>sim/multiplay/generic/float[2]</property>
+  <factor>-20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>door2fr</object-name>
+  <property>sim/multiplay/generic/float[2]</property>
+  <factor>20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>door3fl</object-name>
+  <property>sim/multiplay/generic/float[3]</property>
+  <factor>-20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>door3fr</object-name>
+  <property>sim/multiplay/generic/float[3]</property>
+  <factor>20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>door4fl</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <factor>-20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>door4fr</object-name>
+  <property>sim/multiplay/generic/float[4]</property>
+  <factor>20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+
+
+
+<animation>
+  <type>pick</type>
+   <object-name>door1fr</object-name> 
+   <object-name>door1fl</object-name> 
+   <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <interval-sec>0.2</interval-sec>
+    <binding>
+      <command>nasal</command>
+      <script>setprop("sim/multiplay/chat","LH1, open sesame");</script> <!--XD-->
+    </binding>
+    </action>
+            <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>rfe</tooltip-id>
+                <label>Open LH1 Doors</label>
+            </binding>
+        </hovered>
+</animation>
+
+
+</PropertyList>

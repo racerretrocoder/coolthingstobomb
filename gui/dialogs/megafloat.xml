@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <name>configserver</name>
+  <layout>vbox</layout>
+
+  <text>
+    <label>Megafloat Server Control Panel</label>
+  </text>
+
+  <hrule/>
+
+  <group>
+    <layout>vbox</layout>
+    <halign>center</halign>
+
+    <text>
+      <label></label>
+    </text>
+
+    <checkbox>
+      <halign>left</halign>
+      <label>!MASTER ARM!</label>
+      <property>aprt/MASTARM</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>aprt/MASTARM</property>
+      </binding>
+    </checkbox>
+	<input>
+	  	<width>250</width>
+	  	<height>25</height>
+	  	<label>Callsign</label>
+	  	<property>aprt/callsign</property>
+	  	<live>true</live>
+	  	<halign>left</halign>
+        <binding>
+            <command>dialog-apply</command>
+      	</binding>
+      	<color>
+      		<red>1</red>
+      		<green>0.5</green>
+      		<blue>0.5</blue>
+      	</color>
+      	<enable>
+
+                <property>aprt/MASTARM</property>
+
+        </enable>
+	</input>
+
+	<input>
+	  	<width>250</width>
+	  	<height>25</height>
+	  	<label>SpawnCS</label>
+	  	<property>sim/multiplay/generic/string[3]</property>
+	  	<live>true</live>
+	  	<halign>left</halign>
+        <binding>
+            <command>dialog-apply</command>
+      	</binding>
+      	<color>
+      		<red>1</red>
+      		<green>0.5</green>
+      		<blue>0.5</blue>
+      	</color>
+      	<enable>
+
+                <property>aprt/MASTARM</property>
+
+        </enable>
+	</input>
+
+<input>
+	  	<width>250</width>
+	  	<height>25</height>
+	  	<label>Message</label>
+	  	<property>sim/multiplay/generic/string[2]</property>
+	  	<live>true</live>
+	  	<halign>left</halign>
+        <binding>
+            <command>dialog-apply</command>
+      	</binding>
+      	<color>
+      		<red>1</red>
+      		<green>0.5</green>
+      		<blue>0.5</blue>
+      	</color>
+      	<enable>
+
+                <property>aprt/MASTARM</property>
+
+        </enable>
+	</input>
+
+
+
+  </group>
+
+  <hrule/>
+
+  <group>
+    <layout>hbox</layout>
+    <empty><stretch>true</stretch></empty>
+
+    <button>
+      <legend>Close</legend>
+      <default>true</default>
+      <key>Esc</key>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+
+    </button>
+
+    <empty><stretch>true</stretch></empty>
+  </group>
+
+</PropertyList>
