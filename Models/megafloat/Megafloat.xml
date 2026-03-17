@@ -134,4 +134,13 @@
 </animation>
 
 
+ <animation>
+      <object-name>rect</object-name>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+  <animation>
+  <type>noshadow</type>
+  <object-name>rect</object-name>
+ </animation>
+
 </PropertyList>
