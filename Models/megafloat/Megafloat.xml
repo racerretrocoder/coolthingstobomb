@@ -107,8 +107,30 @@
   </axis>
  </animation>
 
-
-
+ <animation>
+  <type>translate</type>
+  <object-name>door5fl</object-name>
+  <property>sim/multiplay/generic/float[5]</property>
+  <factor>-20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>door5fr</object-name>
+  <property>sim/multiplay/generic/float[5]</property>
+  <factor>20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
 
 
 <animation>
@@ -141,6 +163,48 @@
   <animation>
   <type>noshadow</type>
   <object-name>rect</object-name>
+    <object-name>box</object-name>
  </animation>
+
+
+
+ <animation>
+  <type>translate</type>
+  <object-name>elev1</object-name>
+  <property>sim/multiplay/generic/float[0]</property>
+  <factor>20</factor>
+  <offset-m>0</offset-m>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+<animation>
+  <type>pick</type>
+   <object-name>elev1</object-name> 
+   <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <interval-sec>0.2</interval-sec>
+    <binding>
+      <command>nasal</command>
+      <script>
+aprt.elev1();
+      </script> 
+    </binding>
+    </action>
+            <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>rfae</tooltip-id>
+                <label>Start Elevator</label>
+            </binding>
+        </hovered>
+</animation>
+
+
 
 </PropertyList>
