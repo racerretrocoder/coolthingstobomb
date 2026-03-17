@@ -35,7 +35,7 @@ crease 45.000000
 numvert 4
 12.7695 0 -8.50723
 -10.5956 0 11.0975
--12.7692 0 8.50806
+-12.7692 0 8.50809
 10.5953 0 -11.0981
 numsurf 1
 SURF 0x30
@@ -53,7 +53,7 @@ crease 45.000000
 numvert 4
 12.7694 0 -8.50745
 -10.5953 0 11.098
--12.7684 0 8.50684
+-12.7684 0 8.50687
 10.5968 0 -11.0984
 numsurf 1
 SURF 0x30
@@ -4033,10 +4033,10 @@ name "rect"
 loc -992.456 3.77286 855.568
 crease 45.000000
 numvert 4
--36.7329 0 -3.53528
+-36.7328 0 -3.53528
 36.7329 0 -3.53528
 36.7329 0 3.53552
--36.7329 0 3.53552
+-36.7328 0 3.53552
 numsurf 1
 SURF 0x30
 mat 5
@@ -4481,7 +4481,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -699.49 -1.89299 -80.7532
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -4500,7 +4500,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -679.85 2.65499 -79.9507
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -4558,7 +4558,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -699.399 2.65613 -79.9507
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -4616,7 +4616,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -699.423 2.61834 25.1752
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73059 9.74551 -26.7706
@@ -4967,7 +4967,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -679.85 2.66544 25.1506
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -5025,7 +5025,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -699.399 2.66659 25.1506
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -5083,7 +5083,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -699.423 2.61834 25.1752
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 5.02136 7.70835 -25.9289
@@ -16797,7 +16797,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -699.383 -1.92535 25.3737
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
@@ -16816,7 +16816,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -770.838 -1.66028 -80.7532
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH2.png"
+texture "Liveries/LH2.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
@@ -16835,7 +16835,7 @@ kids 0
 OBJECT poly
 name "door2fr"
 loc -751.198 2.88769 -79.9507
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -16893,7 +16893,7 @@ kids 0
 OBJECT poly
 name "door2fl"
 loc -770.747 2.88884 -79.9507
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -16951,7 +16951,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -770.771 2.85105 25.1752
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73065 13.1726 -26.7706
@@ -17302,7 +17302,7 @@ kids 0
 OBJECT poly
 name "door2fr"
 loc -751.198 2.89814 25.1506
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -17360,7 +17360,7 @@ kids 0
 OBJECT poly
 name "door2fl"
 loc -770.747 2.89929 25.1506
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -17418,7 +17418,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -770.771 2.85105 25.1752
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 4.1441 13.6438 -26.7967
@@ -29132,7 +29132,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -770.731 -1.69264 25.3737
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH2.png"
+texture "Liveries/LH2.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -29151,7 +29151,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -842.935 -1.66028 -81.0186
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -29170,7 +29170,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -823.296 2.88769 -80.2161
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -29228,7 +29228,7 @@ kids 0
 OBJECT poly
 name "door3fl"
 loc -842.844 2.88884 -80.2161
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -29286,7 +29286,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -842.869 2.85105 24.9099
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73071 9.74551 -26.7706
@@ -29637,7 +29637,7 @@ kids 0
 OBJECT poly
 name "door3fr"
 loc -823.296 2.89814 24.8853
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -29695,7 +29695,7 @@ kids 0
 OBJECT poly
 name "door3fl"
 loc -842.844 2.89929 24.8853
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -29753,7 +29753,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -842.869 2.85105 24.9099
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 5.02136 7.70835 -25.9289
@@ -41467,7 +41467,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -842.828 -1.69264 25.1083
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
@@ -41486,7 +41486,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -916.424 -1.66028 -80.6845
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
@@ -41505,7 +41505,7 @@ kids 0
 OBJECT poly
 name "door4fr"
 loc -896.784 2.88769 -79.8821
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -41563,7 +41563,7 @@ kids 0
 OBJECT poly
 name "door4fl"
 loc -916.333 2.88884 -79.8821
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -41621,7 +41621,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -916.357 2.85105 25.2439
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73059 13.1726 -26.7706
@@ -41972,7 +41972,7 @@ kids 0
 OBJECT poly
 name "door4fr"
 loc -896.784 2.89814 25.2193
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -42030,7 +42030,7 @@ kids 0
 OBJECT poly
 name "door4fl"
 loc -916.333 2.89929 25.2193
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -42088,7 +42088,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -916.357 2.85105 25.2439
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 4.14404 13.6438 -26.7967
@@ -53802,7 +53802,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -916.317 -1.69264 25.4424
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -53821,7 +53821,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -985.085 -1.89299 -80.8812
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
@@ -53840,9 +53840,8 @@ kids 0
 OBJECT poly
 name "door5fr"
 loc -965.445 2.65499 -80.0787
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
-hidden
 numvert 8
 -15.3965 8.55574 78.3969
 4.15247 8.55574 78.3969
@@ -53899,9 +53898,8 @@ kids 0
 OBJECT poly
 name "door5fl"
 loc -984.994 2.65613 -80.0787
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
-hidden
 numvert 8
 -15.3965 0.25846 78.3969
 4.15253 0.25846 78.3969
@@ -53958,7 +53956,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -985.018 2.61834 25.0472
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73065 13.1726 -26.7706
@@ -54309,9 +54307,8 @@ kids 0
 OBJECT poly
 name "door5fr"
 loc -965.445 2.66544 25.0226
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
-hidden
 numvert 8
 -15.3965 0.25846 78.3969
 4.15247 0.25846 78.3969
@@ -54368,9 +54365,8 @@ kids 0
 OBJECT poly
 name "door5fl"
 loc -984.994 2.66659 25.0226
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
-hidden
 numvert 8
 -15.3965 8.55574 78.3969
 4.15253 8.55574 78.3969
@@ -54427,7 +54423,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -985.018 2.61834 25.0472
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 4.1441 13.6438 -26.7967
@@ -66141,7 +66137,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -984.978 -1.92535 25.2457
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -66160,7 +66156,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -1056.43 -1.66028 -80.8812
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -66179,7 +66175,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -1036.79 2.88769 -80.0787
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -66237,7 +66233,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -1056.34 2.88884 -80.0787
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -66295,7 +66291,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -1056.37 2.85105 25.0472
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73071 9.74551 -26.7706
@@ -66646,7 +66642,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -1036.79 2.89814 25.0226
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -66704,7 +66700,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -1056.34 2.89929 25.0226
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -66762,7 +66758,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -1056.37 2.85105 25.0472
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 5.02136 7.70835 -25.9289
@@ -78476,7 +78472,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -1056.33 -1.69264 25.2457
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
@@ -78495,7 +78491,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -1128.53 -1.66028 -81.1465
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
@@ -78514,7 +78510,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -1108.89 2.88769 -80.3441
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -78572,7 +78568,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -1128.44 2.88884 -80.3441
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -78630,7 +78626,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -1128.46 2.85105 24.7819
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73071 13.1726 -26.7706
@@ -78981,7 +78977,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -1108.89 2.89814 24.7573
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -79039,7 +79035,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -1128.44 2.89929 24.7573
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -79097,7 +79093,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -1128.46 2.85105 24.7819
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 4.14417 13.6438 -26.7967
@@ -90811,7 +90807,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -1128.42 -1.69264 24.9803
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -90830,7 +90826,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -1202.02 -1.66028 -80.8125
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 19.7384 78.6259
@@ -90849,7 +90845,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -1182.38 2.88769 -80.0101
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -90907,7 +90903,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -1201.93 2.88884 -80.0101
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -90965,7 +90961,7 @@ kids 0
 OBJECT poly
 name "logo"
 loc -1201.95 2.85105 25.1159
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 4
 6.73059 9.74551 -26.7706
@@ -91316,7 +91312,7 @@ kids 0
 OBJECT poly
 name "door1fr"
 loc -1182.38 2.89814 25.0913
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 8.55574 78.3969
@@ -91374,7 +91370,7 @@ kids 0
 OBJECT poly
 name "door1fl"
 loc -1201.93 2.89929 25.0913
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 8
 -15.3965 0.25846 78.3969
@@ -91432,7 +91428,7 @@ kids 0
 OBJECT poly
 name "wavefront obj"
 loc -1201.95 2.85105 25.1159
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/HangarMaterial_baseColor.png"
+texture "HangarMaterial_baseColor.png"
 crease 45.000000
 numvert 2670
 5.02136 7.70835 -25.9289
@@ -103146,7 +103142,7 @@ kids 0
 OBJECT poly
 name "logo1"
 loc -1201.91 -1.69264 25.3144
-texture "C:/Users/Michael/FlightGear/Downloads/fgdata_2024_1/Aircraft/coolthingstobomb/Models/LargeHanger/Liveries/LH1.png"
+texture "Liveries/LH1.png"
 crease 45.000000
 numvert 4
 -5.61194 13.0838 78.6259
