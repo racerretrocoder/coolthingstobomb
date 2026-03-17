@@ -51,7 +51,12 @@ var mainloopyae = func() {
     if (finalmessage == "LH4, close sesame") {
         print("request to open sesame");
         setprop("sim/multiplay/chat","LH4 Doors closed!");
-        setprop("sim/multiplay/generic/float[4]",1);
+        setprop("sim/multiplay/generic/float[4]",0);
+    }
+    if (finalmessage == "LH5, close sesame") {
+        print("request to open sesame");
+        setprop("sim/multiplay/chat","LH5 Doors closed!");
+        setprop("sim/multiplay/generic/float[5]",0);
     }
 }
 
