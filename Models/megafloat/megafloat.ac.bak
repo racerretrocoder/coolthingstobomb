@@ -10,8 +10,79 @@ MATERIAL "" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 169.179  tra
 MATERIAL "" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 169.179  trans 0
 MATERIAL "" rgb 0 1 0  amb 1 1 1  emis 0 0 0  spec 1 1 1  shi 169.179  trans 0
 MATERIAL "" rgb 0 1 0  amb 0 1 0  emis 0 0.405263 0  spec 0 1 0  shi 169.179  trans 0
+MATERIAL "ac3dmat5" rgb 0 0 0  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 0  trans 0
 OBJECT world
-kids 270
+kids 275
+OBJECT poly
+name "wire"
+loc -497.21 3.62302 855.37
+crease 45.000000
+numvert 2
+0 0 37.1771
+0 0 -40.2383
+numsurf 1
+SURF 0x32
+mat 11
+refs 2
+1 0 1
+0 0 0
+kids 0
+OBJECT poly
+name "wire"
+loc -364.516 3.62302 856.135
+crease 45.000000
+numvert 2
+0 0 -40.2075
+0 0 37.2079
+numsurf 1
+SURF 0x32
+mat 11
+refs 2
+0 0 1
+1 0 0
+kids 0
+OBJECT poly
+name "wire"
+loc -396.795 3.62302 855.571
+crease 45.000000
+numvert 2
+0 0 37.1852
+0 0 -40.2303
+numsurf 1
+SURF 0x32
+mat 11
+refs 2
+1 0 1
+0 0 0
+kids 0
+OBJECT poly
+name "wire"
+loc -427.91 3.62302 855.37
+crease 45.000000
+numvert 2
+0 0 -40.2383
+0 0 37.1771
+numsurf 1
+SURF 0x32
+mat 11
+refs 2
+0 0 1
+1 0 0
+kids 0
+OBJECT poly
+name "wire"
+loc -460.439 3.62302 855.771
+crease 45.000000
+numvert 2
+0 0 37.1934
+0 0 -40.2222
+numsurf 1
+SURF 0x32
+mat 11
+refs 2
+1 0 1
+0 0 0
+kids 0
 OBJECT poly
 name "box"
 loc -1354.03 1.55104 1216

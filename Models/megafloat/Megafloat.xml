@@ -206,5 +206,9 @@ aprt.elev1();
 </animation>
 
 
-
+ <animation> 
+  <type>interaction</type> 
+  <object-name>wire</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
 </PropertyList>
