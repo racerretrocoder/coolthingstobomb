@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <icao>
+    <!-- L = light, M = medium, H = heavy, J = jumbo -->
+    <wake-turbulence-category>L</wake-turbulence-category>
+
+    <!-- eg B738, C172, BE9L
+    http://www.icao.int/publications/DOC8643/Pages/Search.aspx may help finding these
+    -->
+    <type type="string">ZZZZ</type> <!-- no ICAO code for the ufo -->
+
+    <!-- ICAO equipment string  -->
+    <equipment type="string">SDFGY</equipment>
+
+    <!-- ICAO surveillance string  -->
+    <surveillance type="string">S</surveillance> <!-- mode-S transponder -->
+  </icao>
+
+  <performance>
+    <minimum>
+      <!--	<takeoff-length-ft type="int">6000</takeoff-length-ft>
+      <landing-length-ft type="int">4000</landing-length-ft> -->
+    </minimum>
+
+    <climb>
+      <!-- potential for climb data in the future
+      <airspeed-knots type="int">280</airspeed-knots>
+      <vertical-speed-fpm type="int">2000</vertical-speed-fpm>
+      -->
+    </climb>
+
+    <cruise>
+      <airspeed-knots type="int">1000</airspeed-knots>
+      <!--  <mach type="double">0.875</mach> -->
+      <altitude-ft type="int">4500</altitude-ft>
+      <!-- <flight-level type="int">330</flight-level> -->
+    </cruise>
+
+    <descent>
+      <!-- potential for descent data in the future
+      <airspeed-knots type="int">330</airspeed-knots>
+      <vertical-speed-fpm type="int">-1200</vertical-speed-fpm>
+      -->
+    </descent>
+
+    <approach>
+      <airspeed-knots type="int">150</airspeed-knots>
+    </approach>
+
+    <maximum>
+      <!--
+      <altitude-ft type="int">21000</altitude-ft>
+      <mach type="double">0.875</mach>
+      <airspeed-knots type="int">180</airspeed-knots>
+      -->
+    </maximum>
+  </performance>
+
+</PropertyList>

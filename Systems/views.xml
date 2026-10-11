@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <chase-distance-m              type="double" archive="y">-120</chase-distance-m>
+
+  <view                          n="100">
+    <name                        type="string">Camera View</name>
+    <!--
+    same as "Cockpit View", but different index, so that it doesn't hide
+    parts of aircraft that are unselected for view number 0
+    -->
+    <enabled                     type="bool">false</enabled>
+    <type>lookfrom</type>
+    <internal                    type="bool">false</internal>
+    <config>
+      <from-model                type="bool">true</from-model>
+      <from-model-idx            type="int">0</from-model-idx>
+      <ground-level-nearplane-m  type="double">0.5f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">118.0</default-field-of-view-deg>
+      <default-pitch-deg         type="double">0</default-pitch-deg>
+      <default-heading-deg       type="double">0</default-heading-deg>
+      <front-direction-deg       type="double">0</front-direction-deg>
+      <front-left-direction-deg  type="double">45</front-left-direction-deg>
+      <left-direction-deg        type="double">90</left-direction-deg>
+      <back-left-direction-deg   type="double">135</back-left-direction-deg>
+      <back-direction-deg        type="double">180</back-direction-deg>
+      <back-right-direction-deg  type="double">225</back-right-direction-deg>
+      <right-direction-deg       type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">315</front-right-direction-deg>
+      <dynamic-view              type="bool">true</dynamic-view>
+    </config>
+  </view>
+
+  <view                          n="0">
+    <name                        type="string">Cockpit View</name>
+    <internal                    type="bool">true</internal>
+    <type>lookfrom</type>
+    <config>
+      <!-- <x-offset-m                archive="y"> -26.287 </x-offset-m> Right -->
+      <!-- <y-offset-m                archive="y">  70.636 </y-offset-m> Up    -->
+      <!-- <z-offset-m                archive="y">  17.743 </z-offset-m> Back  -->
+      <x-offset-m                archive="y"> -853.876 </x-offset-m> <!-- Right -->
+      <y-offset-m                archive="y">   97.916 </y-offset-m> <!-- Up    -->
+      <z-offset-m                archive="y">  579.713 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg          type="double">-10</pitch-offset-deg>
+      <heading-offset-deg        type="double">-10</heading-offset-deg>
+      <default-field-of-view-deg type="double">60</default-field-of-view-deg>
+      <limits>
+        <enabled type="bool">false</enabled>
+      </limits>
+    </config>
+  </view>
+
+  <view                          n="1">
+    <config>
+      <target-z-offset-m         archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view                          n="2">
+    <config>
+      <target-z-offset-m         archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view                          n="3">
+    <config>
+      <target-z-offset-m         archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view                          n="4">
+    <config>
+      <target-z-offset-m         archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view                          n="5">
+    <config>
+      <target-z-offset-m         archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+  <view                          n="6">
+    <config>
+      <target-z-offset-m         archive="y" type="double"> 0 </target-z-offset-m>
+    </config>
+  </view>
+
+</PropertyList>

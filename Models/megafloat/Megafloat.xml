@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>megafloat.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>marking</object-name>
+    <object-name>runway</object-name>
+    <object-name>track</object-name>
+    <object-name>texte</object-name>
+    <object-name>cross</object-name>
+    <object-name>line</object-name>
+    <object-name>spawn</object-name>
+    <object-name>bighangar</object-name>
+    <object-name>elevator</object-name>
+    <object-name>spawn</object-name>
+    <object-name>hangars</object-name>
+    <object-name>details</object-name>
+    <object-name>logo1</object-name>
+    <object-name>logo2</object-name>
+    <object-name>door1fl</object-name>
+    <object-name>door2fl</object-name>
+    <object-name>door3fl</object-name>
+    <object-name>door4fl</object-name>
+    <object-name>door5fl</object-name>
+    <object-name>door6fl</object-name>
+    <object-name>door7fl</object-name>
+    <object-name>door8fl</object-name>
+    <object-name>door1fr</object-name>
+    <object-name>door2fr</object-name>
+    <object-name>door3fr</object-name>
+    <object-name>door4fr</object-name>
+    <object-name>door5fr</object-name>
+    <object-name>door6fr</object-name>
+    <object-name>door7fr</object-name>
+    <object-name>door8fr</object-name>
+
+    <object-name>wire1</object-name>
+    <object-name>wire2</object-name>
+    <object-name>wire3</object-name>
+    <object-name>wire4</object-name>
+
+    <object-name>windows</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>wire1</object-name>
+    <object-name>wire2</object-name>
+    <object-name>wire3</object-name>
+    <object-name>wire4</object-name>
+    <object-name>windows</object-name>
+  </effect>
+
+  <model>
+    <path>light/all-lights.xml</path>
+  </model>
+
+  <!-- doors -->
+  <animation>
+    <type>pick</type>
+    <object-name>door1fr</object-name>
+    <object-name>door1fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[1]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH1, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[1]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH1, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH1 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door1fl</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door1fr</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>door2fr</object-name>
+    <object-name>door2fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[2]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH2, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[2]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH2, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH2 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door2fl</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door2fr</object-name>
+    <property>sim/multiplay/generic/float[2]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>door3fr</object-name>
+    <object-name>door3fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[3]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH3, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[3]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH3, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH3 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door3fl</object-name>
+    <property>sim/multiplay/generic/float[3]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door3fr</object-name>
+    <property>sim/multiplay/generic/float[3]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>door4fr</object-name>
+    <object-name>door4fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[4]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH4, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[4]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH4, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH4 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door4fl</object-name>
+    <property>sim/multiplay/generic/float[4]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door4fr</object-name>
+    <property>sim/multiplay/generic/float[4]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>door5fr</object-name>
+    <object-name>door5fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[5]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH5, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[5]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH5, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH5 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door5fl</object-name>
+    <property>sim/multiplay/generic/float[5]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door5fr</object-name>
+    <property>sim/multiplay/generic/float[5]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>door6fr</object-name>
+    <object-name>door6fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[6]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH6, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[6]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH6, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH6 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door6fl</object-name>
+    <property>sim/multiplay/generic/float[6]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door6fr</object-name>
+    <property>sim/multiplay/generic/float[6]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>door7fr</object-name>
+    <object-name>door7fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH7, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH7, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH7 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door7fl</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door7fr</object-name>
+    <property>sim/multiplay/generic/float[7]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>door8fr</object-name>
+    <object-name>door8fl</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[8]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH8, open sesame");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[8]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","LH8, close sesame");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfe</tooltip-id>
+        <label>Open/Close LH8 Doors</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door8fl</object-name>
+    <property>sim/multiplay/generic/float[8]</property>
+    <factor>-20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>door8fr</object-name>
+    <property>sim/multiplay/generic/float[8]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- ********************************************* -->
+  <animation>
+    <type>translate</type>
+    <object-name>elevator</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>elevator</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <condition>
+          <equals>
+            <property>sim/multiplay/generic/float[0]</property>
+            <value>0</value>
+          </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","elev1 up");
+        </script>
+      </binding>
+      <binding>
+        <condition>
+          <not-equals>
+            <property>sim/multiplay/generic/float[0]</property>
+            <value>0</value>
+          </not-equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+          setprop("sim/multiplay/chat","elev1 dn");
+        </script>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <tooltip-id>rfae</tooltip-id>
+        <label>Up/Down Elevator</label>
+      </binding>
+    </hovered>
+  </animation>
+
+  <animation>
+    <type>interaction</type>
+    <object-name>wire1</object-name>
+    <object-name>wire2</object-name>
+    <object-name>wire3</object-name>
+    <object-name>wire4</object-name>
+    <interaction-type>carrier-wire</interaction-type>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>spot.ac</path>
+
+  <animation>
+    <object-name>apron</object-name>
+    <object-name>Cone</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Cone</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Cone</object-name>
+  </effect>
+
+  <animation>
+    <type>alpha-test</type>
+    <object-name>Cone</object-name>
+    <alpha-factor>0.01</alpha-factor>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Cone</object-name>
+    <emission>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Cone</object-name>
+    <condition>
+      <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.57</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+</PropertyList>

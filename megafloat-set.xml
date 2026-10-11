@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList   include="Systems/megafloat-base.xml">
+
+  <sim>
+
+    <description>[Cool things to bomb!] Island Defense Force | Megafloat</description>
+    <author>Phoenix, UFO Developers</author>
+    <authors>
+      <author>
+        <name>Phoenix</name>
+        <name>UFO Developers</name>
+      </author>
+    </authors>
+
+    <long-description>Land your friends! Dont leave them hanging!</long-description>
+
+    <flight-model>ufo</flight-model>
+
+    <tags>
+      <tag>fictional</tag>
+      <tag>spaceship</tag>
+    </tags>
+
+  </sim>
+
+</PropertyList>

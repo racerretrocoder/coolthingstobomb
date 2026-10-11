@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim               include="views.xml">
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <sound>
+      <path>Aircraft/coolthingstobomb/Systems/megafloat-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/coolthingstobomb/Models/megafloat/Megafloat.xml</path>
+    </model>
+
+    <panel>
+      <visibility>false</visibility>
+      <path>Aircraft/coolthingstobomb/Systems/panel.xml</path>
+    </panel>
+
+    <instrumentation include="instrumentation.xml"/>
+
+    <systems>
+      <autopilot     n="0">
+        <path>Aircraft/coolthingstobomb/Systems/autopilot.xml</path>
+      </autopilot>
+    </systems>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <!--elevator-->
+        <float     n="0">0.0</float>
+        <!--hangers 1-5 -->
+        <float     n="1">0.0</float>
+        <float     n="2">0.0</float>
+        <float     n="3">0.0</float>
+        <float     n="4">0.0</float>
+        <float     n="5">0.0</float>
+        <float     n="6">0.0</float>
+        <float     n="7">0.0</float>
+        <float     n="8">0.0</float>
+        <!-- -->
+        <string    n="1">CARPET</string>
+        <!--the message to send-->
+        <string    n="2"></string>
+        <!--callsign of who can auto spawn-->
+        <string    n="3">everyone</string>
+      </generic>
+    </multiplay>
+
+  </sim>
+
+  <input             include="megafloat-keyboard.xml"/>
+
+  <controls          include="controls.xml"/>
+
+  <systems>
+    <refuel>
+      <type>boom</type>
+      <type>probe</type>
+    </refuel>
+  </systems>
+
+  <instrumentation   include="instrumentation.xml">
+    <gsdi>
+      <serviceable   type="bool">true</serviceable>
+      <enabled       type="bool">true</enabled>
+    </gsdi>
+  </instrumentation>
+
+  <autopilot>
+    <route-manager>
+      <min-lock-altitude-agl-ft type="double">-10000</min-lock-altitude-agl-ft>
+    </route-manager>
+  </autopilot>
+
+  <!-- default model -->
+  <cursor            type="string">Aircraft/coolthingstobomb/Models/cursor.ac</cursor>
+
+  <!-- subdirs of $FG_ROOT to search models in. Comma separated, e.g. "Models,Scenery/Objects/w130n30" -->
+  <source            type="string">Models</source>
+
+  <gear>
+    <gear>
+      <!-- hint for the route manager -->
+      <wow           type="bool">false</wow>
+    </gear>
+  </gear>
+
+  <aircraft          include="aircraft.xml"/>
+
+  <nasal>
+    <ufo>
+      <file>Aircraft/coolthingstobomb/Nasal/vtol.nas</file>
+    </ufo>
+    <aprt>
+      <file>Aircraft/coolthingstobomb/Nasal/megaserver.nas</file>
+    </aprt>
+    <aar>
+      <file>Aircraft/coolthingstobomb/Nasal/aar.nas</file>
+    </aar>
+    <canvas_test_pattern>
+      <file>Aircraft/coolthingstobomb/Nasal/canvas_test_pattern.nas</file>
+    </canvas_test_pattern>
+  </nasal>
+
+</PropertyList>

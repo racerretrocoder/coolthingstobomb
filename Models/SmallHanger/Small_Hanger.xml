@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<nasal>
+  <load>
+    <!--
+      ##############################################################################
+      # The on-load Nasal is not executed when this file is loaded as the user
+      # aircraft. The code is only executed if the file is loaded for a remote
+      # aircraft in Multi-Player mode (MP)
+      ##############################################################################
+    -->
+    <![CDATA[
+	var asdf = 1;
+  # Paste part 1 here!
+    ]]>
+
+    </load>
+  
+ <unload><![CDATA[
+	var asdf = 0;
+  # Paste the second bit here!
+  ]]></unload>
+</nasal>
+
+  <path>Aircraft/coolthingstobomb/Models/SmallHanger/SmallHanger.ac</path>
+</PropertyList>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- OG runway -->
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -2108.688 </x-m>
+      <y-m> -1398.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -2108.688 </x-m>
+      <y-m> -1418.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -2108.688 </x-m>
+      <y-m> -1438.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -2108.688 </x-m>
+      <y-m> -1458.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -2108.688 </x-m>
+      <y-m> -1478.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -2108.688 </x-m>
+      <y-m> -1498.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -2108.688 </x-m>
+      <y-m> -1518.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 1/2 runway -->
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -1756.286 </x-m>
+      <y-m>  -814.076 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -1756.286 </x-m>
+      <y-m>  -834.076 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -1756.286 </x-m>
+      <y-m>  -854.076 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -1756.286 </x-m>
+      <y-m>  -874.076 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>GreenLight.xml</path>
+    <offsets>
+      <x-m> -1756.286 </x-m>
+      <y-m>  -894.076 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

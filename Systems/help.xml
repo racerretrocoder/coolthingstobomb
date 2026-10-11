@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>UFO</title>
+  <key>
+    <name>joystick fire button</name>
+    <desc>fly backwards</desc>
+  </key>
+  <key>
+    <name>b</name>
+    <desc>fly backwards</desc>
+  </key>
+  <key>
+    <name>[ ]</name>
+    <desc>decrease/increase maximum speed</desc>
+  </key>
+  <key>
+    <name>Home</name>
+    <desc>Hover up</desc>
+  </key>
+  <key>
+    <name>End</name>
+    <desc>Hover down</desc>
+  </key>
+  <key>
+    <name>,</name>
+    <desc>Hover left</desc>
+  </key>
+  <key>
+    <name>.</name>
+    <desc>Hover right</desc>
+  </key>
+  <key>
+    <name>mouse click</name>
+    <desc>add model to scenery</desc>
+  </key>
+  <key>
+    <name>Ctrl + mouse click</name>
+    <desc>select nearest object</desc>
+  </key>
+  <key>
+    <name>Shift + mouse click</name>
+    <desc>add new object to selection</desc>
+  </key>
+  <key>
+    <name>Shift + Ctrl + mouse click</name>
+    <desc>add nearest object to selection</desc>
+  </key>
+  <key>
+    <name>Alt + mouse click</name>
+    <desc>move selected object(s) to new place</desc>
+  </key>
+  <key>
+    <name>Ctrl + Alt + mouse click</name>
+    <desc>Print lat/lon/alt and landclass of mouse click position</desc>
+  </key>
+  <key>
+    <name>g (gear) + click</name>
+    <desc>teleport to click position, looking at active object</desc>
+  </key>
+  <key>
+    <name>Ctrl + PgUp/PgDn</name>
+    <desc>cycle through model list</desc>
+  </key>
+  <key>
+    <name>Ctrl + cursor/arrow keys</name>
+    <desc>move selected object(s) away/nearer/left/right</desc>
+  </key>
+  <key>
+    <name>backspace</name>
+    <desc>remove selected object(s)</desc>
+  </key>
+  <key>
+    <name>d</name>
+    <desc>dump object</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>export object data</desc>
+  </key>
+  <key>
+    <name>l</name>
+    <desc>load model file via file selector</desc>
+  </key>
+  <key>
+    <name>m</name>
+    <desc>toggle marker for active (= last selected) object</desc>
+  </key>
+  <key>
+    <name>n</name>
+    <desc>export flightplan</desc>
+  </key>
+  <key>
+    <name>P</name>
+    <desc>toggle radar panel (see Ctrl-C for the control areas)</desc>
+  </key>
+  <key>
+    <name>space</name>
+    <desc>open/close model select dialog</desc>
+  </key>
+  <key>
+    <name>=</name>
+    <desc>open/close cursor dialog</desc>
+  </key>
+  <key>
+    <name>Ctrl + G</name>
+    <desc>Show/hide 8x8x8m box grid around ufo for screen alignment</desc>
+  </key>
+
+  <line>Pre-select initial model (path relative to $FG_ROOT):</line>
+  <line>&#32;&#32;&#45;&#45;prop:cursor=Model/path.xml</line>
+  <line/>
+  <line>Set directories that are scanned for models (comma separated and</line>
+  <line>relative to $FG_ROOT; default: Models):</line>
+  <line>&#32;&#32;&#45;&#45;prop:source=Models,Scenery/Objects</line>
+  <line/>
+  <line>Exported data are written to:</line>
+  <line>&#32;&#32;~/.fgfs/Export/ufo-model-export.xml   (Unix)</line>
+  <line>&#32;&#32;%APPDATA%\flightgear.org\Export\ufo-model-export.xml   (Microsoft Windows)</line>
+  <line/>
+  <line>In the adjustment dialog (= key) holding the Ctrl or Shift key down</line>
+  <line>makes slider effects coarser/finer.</line>
+
+</PropertyList>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <radar>
+    <serviceable type="bool">true</serviceable>
+    <switch type="string" archive="y">on</switch>
+    <range type="double" archive="y">40</range>
+    <mode-control type="int" archive="y">2</mode-control>
+    <limit-deg type="double">180</limit-deg>
+
+    <mode type="string" archive="y">WX</mode>
+    <lightning type="bool" archive="y">true</lightning>
+    <display-mode type="string" archive="y">plan</display-mode>
+
+    <display-controls>
+      <WX type="bool" archive="y">false</WX>
+      <data type="bool" archive="y">true</data>
+      <pos type="bool" archive="y">true</pos>
+    </display-controls>
+  </radar>
+
+  <nav n="0">
+    <volume type="double">0</volume>
+  </nav>
+
+  <nav n="1">
+    <volume type="double">0</volume>
+  </nav>
+
+  <!-- mk-viii is disabled: to enable for testing purposes, toggle the "serviceable" property -->
+  <mk-viii>  <!-- mk-viii configuration, see: http://wiki.flightgear.org/index.php/GPWS -->
+    <serviceable type="bool">false</serviceable>     <!-- EGPWS_ENABLE -->
+    <configuration-module>
+      <category-1>                    <!-- AIRCRAFT_MODE_TYPE_SELECT -->
+        255 <!-- aircraft type T1, fast turbofan -->
+      </category-1>
+      <category-4>                    <!-- ALTITUDE_CALLOUTS -->
+        13 <!-- enable all altitude callouts -->
+      </category-4>
+      <category-8>                    <!-- RADIO_ALTITUDE_INPUT_SELECT -->
+        2
+      </category-8>
+      <category-13>                   <!-- INPUT_OUTPUT_DISCRETE_TYPE_SELECT -->
+        5 <!-- flashing warning lamp -->
+      </category-13>
+    </configuration-module>
+    <voice>
+      <file-prefix type="string">Sounds/mk-viii/</file-prefix>
+    </voice>
+    <inputs>                            <!-- Module I/O -->
+      <arinc429>
+        <!-- provide fixed value for decision height -->
+        <decision-height-ncd> false </decision-height-ncd>
+        <decision-height> 250 </decision-height>
+      </arinc429>
+    </inputs>
+    <speaker>                           <!-- Speaker Configuration -->
+      <max-dist type="double"> 200.0 </max-dist>        <!-- Max. distance where speaker is heard -->
+      <reference-dist type="double"> 2 </reference-dist> <!-- Distance to pilot -->
+      <volume type="double"> 0.6 </volume>          <!-- Volume at reference distance -->
+    </speaker>
+  </mk-viii>
+
+  <!-- tcas is disabled: to enable for testing purposes, toggle the "serviceable" property -->
+  <tcas>                                    <!-- http://wiki.flightgear.org/index.php/TCAS -->
+    <serviceable type="bool">false</serviceable>
+    <!-- TCAS ENABLE -->
+    <inputs>
+      <mode type="int">3</mode>         <!-- 0=off, 1=standby, 2=TA-only, 3=auto(TA/RA) -->
+    </inputs>
+    <speaker>                             <!-- Speaker Configuration -->
+      <max-dist> 2 </max-dist>          <!-- Max. distance where speaker is heard -->
+      <reference-dist> 1 </reference-dist> <!-- Distance to pilot -->
+      <volume> 1.0 </volume>            <!-- Volume at reference distance -->
+    </speaker>
+  </tcas>
+
+</PropertyList>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>Corner1</name>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  -885.688 </x-m>
+      <y-m> -1628.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Corner2</name>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  -690.688 </x-m>
+      <y-m> -1628.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Corner3</name>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  -885.688 </x-m>
+      <y-m> -1885.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Corner4</name>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  -690.688 </x-m>
+      <y-m> -1885.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>translate</type>
+    <object-name>Corner1</object-name>
+    <object-name>Corner2</object-name>
+    <object-name>Corner3</object-name>
+    <object-name>Corner4</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <factor>20</factor>
+    <offset-m>0</offset-m>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

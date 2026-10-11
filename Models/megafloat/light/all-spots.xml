@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- -->
+  <model>
+    <path>spot.xml</path>
+    <offsets>
+      <x-m> -731.000 </x-m>
+      <y-m> -100.990 </y-m>
+      <z-m>    0.000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>spot.xml</path>
+    <offsets>
+      <x-m> -947.000 </x-m>
+      <y-m> -100.990 </y-m>
+      <z-m>    0.000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>spot.xml</path>
+    <offsets>
+      <x-m> -1161.000 </x-m>
+      <y-m>  -100.990 </y-m>
+      <z-m>     0.000 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

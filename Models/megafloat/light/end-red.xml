@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- OG runway -->
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>   944.312 </x-m>
+      <y-m> -1398.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>   944.312 </x-m>
+      <y-m> -1418.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>   944.312 </x-m>
+      <y-m> -1438.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>   944.312 </x-m>
+      <y-m> -1458.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>   944.312 </x-m>
+      <y-m> -1478.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>   944.312 </x-m>
+      <y-m> -1498.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>   944.312 </x-m>
+      <y-m> -1518.027 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 1/2 runway -->
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  579.713 </x-m>
+      <y-m> -813.876 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  579.713 </x-m>
+      <y-m> -833.876 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  579.713 </x-m>
+      <y-m> -853.876 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  579.713 </x-m>
+      <y-m> -873.876 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>RedLight.xml</path>
+    <offsets>
+      <x-m>  579.713 </x-m>
+      <y-m> -893.876 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

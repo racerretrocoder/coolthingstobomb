@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<nasal>
+  <load>
+    <!--
+      ##############################################################################
+      # The on-load Nasal is not executed when this file is loaded as the user
+      # aircraft. The code is only executed if the file is loaded for a remote
+      # aircraft in Multi-Player mode (MP)
+      ##############################################################################
+    -->
+    <![CDATA[
+	var asdf = 1;
+  # Paste part 1 here!
+    ]]>
+
+    </load>
+  
+ <unload><![CDATA[
+	var asdf = 0;
+  # Paste the second bit here!
+  ]]></unload>
+</nasal>
+
+  <path>Aircraft/coolthingstobomb/Models/ArrestingWire/ArrestingWire.ac</path>
+
+
+ <animation> 
+  <type>interaction</type> 
+  <object-name>wire1</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+
+ <animation> 
+  <type>interaction</type> 
+  <object-name>wire2</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+ 
+  <animation> 
+  <type>interaction</type> 
+  <object-name>wire3</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+
+  <animation> 
+  <type>interaction</type> 
+  <object-name>wire4</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+
+  <animation> 
+  <type>interaction</type> 
+  <object-name>wire5</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+
+  <animation> 
+  <type>interaction</type> 
+  <object-name>wire6</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+
+  <animation> 
+  <type>interaction</type> 
+  <object-name>wire7</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+
+  <animation> 
+  <type>interaction</type> 
+  <object-name>wire8</object-name> 
+  <interaction-type>carrier-wire</interaction-type> 
+ </animation>
+
+
+
+
+</PropertyList>
+

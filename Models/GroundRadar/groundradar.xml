@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <nasal>
+    <load>
+      <!--
+      ##############################################################################
+      # The on-load Nasal is not executed when this file is loaded as the user
+      # aircraft. The code is only executed if the file is loaded for a remote
+      # aircraft in Multi-Player mode (MP)
+      ##############################################################################
+      -->
+      <![CDATA[
+        var asdf = 1;
+        # Paste part 1 here!
+      ]]>
+    </load>
+    <unload>
+      <![CDATA[
+        var asdf = 0;
+        # Paste the second bit here!
+      ]]>
+    </unload>
+  </nasal>
+
+  <path>groundradar.ac</path>
+
+  <animation>
+    <object-name>Radar</object-name>
+    <object-name>probe</object-name>
+    <object-name>axe</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/coolthingstobomb/Models/GroundRadar/Bump/bumpspec</inherits-from>
+    <object-name>Radar</object-name>
+    <object-name>probe</object-name>
+    <object-name>axe</object-name>
+  </effect>
+  <!--
+  <animation>
+    <type>rotate</type>
+    <object-name>probe</object-name>
+    <property>controls/radar/dish/pitch</property>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.02298 </y-m>
+      <z-m> 1.05597 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>probe</object-name>
+    <object-name>axe</object-name>
+    <property>controls/radar/dish/hdg</property>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.00159 </y-m>
+      <z-m> 0.80751 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  -->
+</PropertyList>
+

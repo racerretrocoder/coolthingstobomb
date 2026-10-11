@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>all-spots.xml</path>
+  </model>
+
+  <model>
+    <path>all-9L.xml</path>
+  </model>
+
+  <model>
+    <path>all-9R.xml</path>
+  </model>
+
+  <model>
+    <path>all-6L.xml</path>
+  </model>
+
+  <model>
+    <path>all-6R.xml</path>
+  </model>
+
+  <model>
+    <path>all-3L.xml</path>
+  </model>
+
+  <model>
+    <path>all-3R.xml</path>
+  </model>
+
+  <model>
+    <path>all-sides.xml</path>
+  </model>
+
+  <model>
+    <path>all-elevators.xml</path>
+  </model>
+
+  <model>
+    <path>start-green.xml</path>
+  </model>
+
+  <model>
+    <path>end-red.xml</path>
+  </model>
+
+</PropertyList>

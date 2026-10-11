@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- OG runway -->
+  <!-- 1 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   376.311 </x-m>
+      <y-m> -1415.703 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   376.311 </x-m>
+      <y-m> -1424.889 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   376.311 </x-m>
+      <y-m> -1485.206 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   376.311 </x-m>
+      <y-m> -1494.383 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 2 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   366.418 </x-m>
+      <y-m> -1415.703 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   366.418 </x-m>
+      <y-m> -1424.889 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   366.418 </x-m>
+      <y-m> -1485.206 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   366.418 </x-m>
+      <y-m> -1494.383 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 3 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   356.258 </x-m>
+      <y-m> -1415.703 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   356.258 </x-m>
+      <y-m> -1424.889 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   356.258 </x-m>
+      <y-m> -1485.206 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   356.258 </x-m>
+      <y-m> -1494.383 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 4 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   272.311 </x-m>
+      <y-m> -1415.703 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   272.311 </x-m>
+      <y-m> -1424.889 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   272.311 </x-m>
+      <y-m> -1485.206 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   272.311 </x-m>
+      <y-m> -1494.383 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 5 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   262.418 </x-m>
+      <y-m> -1415.703 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   262.418 </x-m>
+      <y-m> -1424.889 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   262.418 </x-m>
+      <y-m> -1485.206 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   262.418 </x-m>
+      <y-m> -1494.383 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 6 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   252.258 </x-m>
+      <y-m> -1415.703 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   252.258 </x-m>
+      <y-m> -1424.889 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   252.258 </x-m>
+      <y-m> -1485.206 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>   252.258 </x-m>
+      <y-m> -1494.383 </y-m>
+      <z-m>     0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 1/2 runway -->
+  <!-- 1 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  218.713 </x-m>
+      <y-m> -832.153 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  218.713 </x-m>
+      <y-m> -837.438 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  218.713 </x-m>
+      <y-m> -873.956 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  218.713 </x-m>
+      <y-m> -879.532 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 2 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  208.820 </x-m>
+      <y-m> -832.153 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  208.820 </x-m>
+      <y-m> -837.438 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  208.820 </x-m>
+      <y-m> -873.956 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  208.820 </x-m>
+      <y-m> -879.532 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 3 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  198.660 </x-m>
+      <y-m> -832.153 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  198.660 </x-m>
+      <y-m> -837.438 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  198.660 </x-m>
+      <y-m> -873.956 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  198.660 </x-m>
+      <y-m> -879.532 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 4 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  140.713 </x-m>
+      <y-m> -832.653 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  140.713 </x-m>
+      <y-m> -838.038 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  140.713 </x-m>
+      <y-m> -874.556 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  140.713 </x-m>
+      <y-m> -880.032 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 5 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  130.820 </x-m>
+      <y-m> -832.653 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  130.820 </x-m>
+      <y-m> -838.038 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  130.820 </x-m>
+      <y-m> -874.556 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  130.820 </x-m>
+      <y-m> -880.032 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 6 -->
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  120.660 </x-m>
+      <y-m> -832.653 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  120.660 </x-m>
+      <y-m> -838.038 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  120.660 </x-m>
+      <y-m> -874.556 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>WhiteLight.xml</path>
+    <offsets>
+      <x-m>  120.660 </x-m>
+      <y-m> -880.032 </y-m>
+      <z-m>    0.686 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

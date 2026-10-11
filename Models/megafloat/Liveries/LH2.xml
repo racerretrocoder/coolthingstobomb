@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<PropertyList>
+
+<sim>
+  <model>
+    <livery>
+      <name type="string">IDF 249TH EFS LH2</name>     
+<texture-logo1>Liveries/LH2.png</texture-logo1>
+    </livery>
+  </model>
+</sim>
+
+</PropertyList>
